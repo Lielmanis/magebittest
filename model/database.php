@@ -18,7 +18,17 @@ class Database {
             return error_log('Connection error: ' . $mysqli->connect_error);
         }
         else{
+            $this->createTable();
             return $this->conn;
         }
+    }
+
+    public function createTable(){
+        $sql = "CREATE TABLE test (
+            id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            email VARCHAR(50),
+            date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+            )";
+        $this->conn->query($sql);
     }
 }
