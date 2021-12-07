@@ -1,0 +1,560 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div, h1, p, img, button, input, hr, ::placeholder, label {
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+}
+
+p, a, ::placeholder, label {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #FFFFFF;
+}
+
+.logo {
+  left: 20px;
+  top: 10px;
+  z-index: 1;
+}
+
+.logo_name {
+  left: 140px;
+  top: 120px;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.nav a {
+  position: absolute;
+  height: 24px;
+  top: 21px;
+  font-size: 14px;
+  line-height: 24px;
+  z-index: 1;
+  text-decoration: none;
+  color: #6A707B;
+}
+
+.about {
+  width: 37px;
+  left: 149px;
+}
+
+.work {
+  width: 80px;
+  left: 206px;
+}
+
+.contact {
+  width: 49px;
+  left: 306px;
+}
+
+.image {
+  left: -281px;
+  top: 66px;
+}
+
+.image img {
+  width: 1119px;
+  height: 746px;
+  object-fit: contain;
+  object-position: 0%;
+}
+
+.content {
+  width: 335px;
+  height: 371px;
+  left: 20px;
+  top: 254px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+}
+
+.subHead {
+  width: 295px;
+  height: 34px;
+  left: 20px;
+  top: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  line-height: 34px;
+  color: #131821;
+}
+
+.sub {
+  width: 295px;
+  height: 52px;
+  left: 20px;
+  top: 74px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #6A707B;
+}
+
+input[type=email] {
+  width: 295px;
+  height: 60px;
+  left: 20px;
+  top: 146px;
+  background: #FFFFFF;
+  border: 1px solid #F2F5FA;
+  box-sizing: border-box;
+  border-left: 4px solid #4066A5;
+}
+
+input[type=email]:focus {
+  box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+  outline: none;
+}
+
+input[type=email]:hover {
+  box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+  border-color: #4066A5;
+}
+input[type=email]:hover ~ button img {
+  filter: none;
+  opacity: 1;
+}
+
+input[type=email]:hover::-webkit-input-placeholder {
+  color: #131821;
+}
+
+::placeholder {
+  width: 227px;
+  height: 24px;
+  left: 15px;
+  top: 18px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6A707B;
+}
+
+button {
+  left: 276px;
+  top: 169px;
+  border: none;
+}
+
+.disabledButtonStyle:hover img {
+  filter: grayscale(1) invert(1);
+  opacity: 0.7;
+}
+
+button img {
+  filter: grayscale(1) invert(1);
+  opacity: 0.7;
+}
+
+button:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  left: 20px;
+  top: 209px;
+}
+
+.checkStyle {
+  top: 229px !important;
+}
+
+.otherCheckStyle {
+  top: 249px !important;
+}
+
+.contentStyle {
+  height: 416px !important;
+}
+.contentStyle input[type=checkbox] {
+  top: 272px !important;
+}
+.contentStyle label {
+  top: 272px !important;
+}
+.contentStyle .hr {
+  top: 319px !important;
+}
+.contentStyle .soc_icons div {
+  top: 340px !important;
+}
+
+.contentHide .subHead {
+  display: none;
+}
+.contentHide .sub {
+  display: none;
+}
+.contentHide form {
+  display: none;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  left: 20px;
+  top: 227px;
+  background: #FFFFFF;
+  border: 1px solid #E3E3E4;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+input[type=checkbox]:checked {
+  background: #4066A5;
+}
+input[type=checkbox]:checked::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 4px;
+  top: 8px;
+  left: 5px;
+  border-bottom: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+  transform: rotate(-45deg);
+}
+
+label {
+  width: 254px;
+  height: 28px;
+  left: 61px;
+  top: 226px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6A707B;
+}
+
+label a {
+  color: #131821;
+  font-weight: normal;
+  text-underline-offset: 2px;
+}
+
+label a:hover {
+  color: #4066A5;
+}
+
+label a:active {
+  color: #233759;
+}
+
+.success {
+  position: absolute;
+  left: 20px;
+}
+
+.success img {
+  width: 44px;
+  height: 70px;
+  top: 30px;
+}
+
+.success h1 {
+  width: 295px;
+  height: 34px;
+  top: 139px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  line-height: 34px;
+  color: #131821;
+}
+
+.success p {
+  width: 295px;
+  height: 52px;
+  top: 183px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #6A707B;
+}
+
+.hr {
+  width: 295px;
+  height: 1px;
+  left: 20px;
+  top: 274px;
+  background: #E3E3E4;
+}
+
+.soc_icons div {
+  width: 46px;
+  height: 46px;
+  top: 295px;
+  border: 2px solid #E3E3E4;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.soc_icons div img {
+  filter: grayscale(1) invert(1);
+  opacity: 0.3;
+}
+
+.facebook {
+  left: 53px;
+}
+.facebook img {
+  left: 17px;
+  top: 13px;
+}
+
+.instagram {
+  left: 109px;
+}
+.instagram img {
+  left: 13px;
+  top: 13px;
+}
+
+.twitter {
+  left: 165px;
+}
+.twitter img {
+  left: 13px;
+  top: 15px;
+}
+
+.youtube {
+  left: 221px;
+}
+.youtube img {
+  left: 13px;
+  top: 15px;
+}
+
+.facebook:hover, .instagram:hover, .twitter:hover, .youtube:hover {
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.facebook:hover img, .instagram:hover img, .twitter:hover img, .youtube:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+.facebook:active, .instagram:active, .twitter:active, .youtube:active {
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.facebook:active img, .instagram:active img, .twitter:active img, .youtube:active img {
+  filter: none;
+  opacity: 1;
+}
+
+.facebook:hover {
+  background: #4267B2;
+}
+
+.facebook:active {
+  background: #2F4A80;
+}
+
+.instagram:hover {
+  background: #C13584;
+}
+
+.instagram:active {
+  background: #8F2762;
+}
+
+.twitter:hover {
+  background: #1DA1F2;
+}
+
+.twitter:active {
+  background: #177FBF;
+}
+
+.youtube:hover {
+  background: #FF0000;
+}
+
+.youtube:active {
+  background: #CC0000;
+}
+
+@media only screen and (min-width: 800px) {
+  .logo {
+    left: 100px;
+    top: 100px;
+  }
+
+  .logo_name {
+    visibility: visible;
+  }
+
+  .nav a {
+    height: 26px;
+    top: 114px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .about {
+    width: 42px;
+    left: 331px;
+  }
+
+  .work {
+    width: 91px;
+    left: 403px;
+  }
+
+  .contact {
+    width: 56px;
+    left: 524px;
+  }
+
+  .image {
+    left: 680px;
+    top: 0px;
+  }
+
+  .image img {
+    width: 1620px;
+    height: 1080px;
+  }
+
+  .content {
+    width: 680px;
+    height: 1080px !important;
+    left: 0px;
+    top: 0px;
+  }
+
+  .subHead {
+    width: 399px;
+    height: 44px;
+    left: 140px;
+    top: 374px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .sub {
+    width: 400px;
+    height: 56px;
+    left: 140px;
+    top: 433px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  input[type=email] {
+    width: 663px;
+    height: 70px;
+    left: 100px;
+    top: 539px;
+  }
+
+  ::placeholder {
+    left: 44px;
+    top: 23px;
+  }
+
+  button {
+    left: 699px;
+    top: 567px;
+  }
+
+  .error {
+    left: 100px;
+    top: 619px;
+  }
+
+  .checkStyle, .otherCheckStyle {
+    top: 639px !important;
+  }
+
+  .contentStyle input[type=checkbox] {
+    top: 663px !important;
+  }
+  .contentStyle label {
+    top: 662px !important;
+  }
+  .contentStyle .hr {
+    top: 740px !important;
+  }
+  .contentStyle .soc_icons div {
+    top: 791px !important;
+  }
+
+  input[type=checkbox] {
+    left: 140px;
+    top: 663px;
+  }
+
+  label {
+    width: 359px;
+    left: 181px;
+    top: 662px;
+  }
+
+  .success {
+    left: 140px;
+  }
+
+  .success img {
+    top: 269px;
+  }
+
+  .success h1 {
+    width: 400px;
+    height: 44px;
+    top: 369px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .success p {
+    width: 400px;
+    height: 56px;
+    top: 433px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .contentSuc .hr {
+    top: 539px !important;
+  }
+
+  .contentSuc .soc_icons div {
+    top: 590px !important;
+  }
+
+  .hr {
+    width: 400px;
+    left: 140px;
+    top: 740px;
+  }
+
+  .soc_icons div {
+    top: 791px;
+  }
+
+  .facebook {
+    left: 218px;
+  }
+
+  .instagram {
+    left: 284px;
+  }
+
+  .twitter {
+    left: 350px;
+  }
+
+  .youtube {
+    left: 416px;
+  }
+}
